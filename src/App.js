@@ -12,6 +12,7 @@ function App() {
       <div className = "header-div">
         <Header />
       </div>    
+      
       <div className = "image-list-div">
         <ImageList />
       </div>

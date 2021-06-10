@@ -58,7 +58,7 @@ const images = [
     },
     {
       url:
-        "https://vignette.wikia.nocookie.net/landbeforetime/images/c/c3/Cera_infobox.png/revision/latest?cb=20180422005003",
+        "https://i.ytimg.com/vi/bCfPvdMS_Ss/maxresdefault.jpg",
       title: "Cera",
       description:
         "Three horns but still, horns. And who doesn't like The Land Before Time?",
@@ -113,7 +113,7 @@ const images = [
       horns: 2
     },
     {
-      url: "https://cdn.modernfarmer.com/wp-content/uploads/2014/08/addax.jpg",
+      url: "https://upload.wikimedia.org/wikipedia/commons/8/8d/A_big_male_Addax_showing_as_the_power_of_his_horns.jpg",
       title: "Addax",
       description:
         "This guy is basically extinct but survives well in captivity, so they're frequently found in zoos",
