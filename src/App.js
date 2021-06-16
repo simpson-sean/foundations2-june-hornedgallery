@@ -28,23 +28,23 @@ export default class App extends Component {
 
   render() {
 
-    let filterPokemon = pokedex;
+    let filterPokedex = pokedex;
 
-    if (this.filterKeywords) {
-        filterPokemon = filterPokemon.filter(image => image.keyword === this.filterKeywords)
+    if (this.state.filterKeywords) {
+        filterPokedex = filterPokedex.filter(image => image.keyword === this.state.filterKeywords)
     }
 
-    if (this.filterHorns) {
-        filterPokemon = filterPokemon.filter(image => image.horns === +this.filterHorns)
+    if (this.state.filterHorns) {
+        filterPokedex = filterPokedex.filter(image => image.horns === +this.state.filterHorns)
     }
 
+    console.log(filterPokedex);
 
     return (
       <div className="App-header">
         <Header />
-        <section className="boss-container">
-            {/* this generates a drop down of options */}
-            
+        <section className="poke-container">
+            {/* this generates a drop down of options */}           
             <select name='Animal' onChange={this.handleClick}>
                 <option value='narwhal'>Narwhal</option>
                 <option value='rhino'>Rhino</option>
@@ -65,13 +65,9 @@ export default class App extends Component {
                 <option value='3'>Three Horn</option>
                 <option value='100'>More Horn</option>
             </select> 
-
-
         </section>
 
-
-
-        <ImageList pokedex={pokedex} />
+        <ImageList pokedex={pokedex} pokefilter={filterPokedex} />
       </div>
     )
   }
