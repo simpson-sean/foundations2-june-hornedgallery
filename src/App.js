@@ -1,25 +1,25 @@
-// import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+
+
 import Header from './Header.js';
 import ImageList from './ImageList.js';
+import pokedex from './data.js';
 
 
+export default class App extends Component {
+  
 
-function App() {
-  return (
-    <div className = "app-header">
-      
-      <div className = "header-div">
+
+  render() {
+    return (
+      <div className="App-header">
         <Header />
-      </div>    
-      
-      <div className = "image-list-div">
-        <ImageList />
+        <ImageList pokedex={pokedex} />
       </div>
-
-
-    </div>
-  );
+    )
+  }
 }
 
-export default App;
+
+
+
