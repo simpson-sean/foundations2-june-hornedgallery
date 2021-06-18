@@ -10,7 +10,7 @@ export default class ImageList extends Component {
         return (
             <div>
                 This is the image list.
-                <ImageItem pokedex={this.props.pokefilter} />
+                <ImageItem animals={this.props.animalfilter} />
             </div>
         )
     }

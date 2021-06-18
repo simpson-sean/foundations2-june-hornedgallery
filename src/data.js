@@ -1,5 +1,5 @@
 
-const pokedex = [
+const animals = [
     
     {
       url:
@@ -163,4 +163,4 @@ const pokedex = [
     }
   ];
   
-  export default pokedex;
+  export default animals;
